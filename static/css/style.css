@@ -1,0 +1,10 @@
+.page-header {
+    background-color: #33ffdd;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+h1,h3 {
+     color: #C000000;
+     font-family: 'Lobster';
+}

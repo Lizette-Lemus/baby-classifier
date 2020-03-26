@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+<html>
+	<head>
+		<title> Baby classifier </title>
+		<link rel="stylesheet" href="../static/css/style.css">
+	</head>
+
+	<body>	
+		<center>
+		<div class = "page-header">
+			<h1>Happy baby or sad baby</h1>
+		</div>
+
+		<div>
+			<form method= "POST" enctype = "multipart/form-data">
+			<label for="image_file">Upload a picture of a baby:</label>
+			<input type = "file" name = "image_file"><br>
+			<input type = "submit" value = "Analyze"><br>
+			</form>
+			<img src = "{{ url_for('send_image', filename = image_name)}}" 
+			width="250" height="250">
+		</div>
+		<div>
+			<h3> {{pred_message}} </h3>
+		</div>
+		</center>
+	</body>
+</html>
