@@ -1,1 +1,1 @@
-web:gunicorn main:baby_classifier_app
+web:gunicorn baby_classifier_app:app
